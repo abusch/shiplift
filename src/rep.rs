@@ -272,7 +272,6 @@ pub struct MemoryStat {
     pub total_inactive_anon: u64,
     pub rss_huge: u64,
     pub hierarchical_memory_limit: u64,
-    pub hierarchical_memsw_limit: u64,
     pub total_pgfault: u64,
     pub total_active_file: u64,
     pub active_anon: u64,
@@ -284,8 +283,6 @@ pub struct MemoryStat {
     pub pgfault: u64,
     pub inactive_file: u64,
     pub total_pgpgin: u64,
-    pub swap: u64,
-    pub total_swap: u64,
 }
 
 #[derive(Clone, Debug, RustcEncodable, RustcDecodable)]
